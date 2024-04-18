@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Multi-Function Web Tool</title>
+
+  </head>
+  <body>
+    <main>
+      <h1>Multi-Function Web Tool</h1>
+      <form id="form" class="form">
+        <h2>Input:</h2>
+        <fieldset>
+          <div>
+            <div class="toolBox">
+                <input type="text" id="inputBox" placeholder="Enter your value">
+            </div>
+            <select name="values" class="values-dropdown" aria-label="first number">
+             <option value="factorial" onclick="factorialize()" selected>Factorial</option>
+             <option value="reverseWord" onclick="reverseWord()">Reverse Word</option>
+             <option value="uppercase" onclick="toUpperCase()">Uppercase</option>
+             <option value="loop" onclick="loop()">Loop</option>
+            </select>
+          </div>
+        </fieldset>
+        <button id="submit">Submit</button>
+      </form>
+      <div class="output-container">
+        <h2>Output:</h2>
+        <div class="output-array">
+          <div>
+            <span class="output-value" id="output-value-4">?</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
